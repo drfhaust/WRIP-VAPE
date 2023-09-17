@@ -284,11 +284,11 @@
       (tstamp ccb77f2b-3549-44c6-9804-da4ac005c4cf)
     )
     (pad "1" smd roundrect (at 0 0 180) (size 1.35 1.35) (layers "B.Cu" "B.Paste" "B.Mask") (roundrect_rratio 0.35)
-      (net 8 "/vin") (tstamp c4b27294-7c93-445a-9043-cc8ccec6a53d))
+      (net 8 "/vin") (tstamp 6b859a55-6dc7-4daa-91fa-f48c464b4da8))
   )
 
-  (gr_rect (start 89.75 62) (end 100.25 69.5)
-    (stroke (width 0.1) (type default)) (fill none) (layer "F.Fab") (tstamp 020ad5f5-c98a-4eb7-b8cf-c1af7d34613a))
+  (gr_rect (start 89.9 62) (end 100.12 68.98)
+    (stroke (width 0.1) (type default)) (fill none) (layer "Edge.Cuts") (tstamp 020ad5f5-c98a-4eb7-b8cf-c1af7d34613a))
 
   (segment (start 94.250497 64.25) (end 93.75 63.749503) (width 0.25) (layer "F.Cu") (net 1) (tstamp 59466eb8-b2cb-45c3-bc66-8b6c743277b0))
   (segment (start 93.75 63.749503) (end 93.75 62.975) (width 0.25) (layer "F.Cu") (net 1) (tstamp 70ee3aae-9e4f-45a3-a289-95a1986121d0))
