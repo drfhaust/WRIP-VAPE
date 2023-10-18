@@ -429,7 +429,7 @@
       "netlist": "",
       "specctra_dsn": "",
       "step": "WRIP-ELECTRONICS usb.step",
-      "vrml": ""
+      "vrml": "WRIP-ELECTRONICS usb.wrl"
     },
     "page_layout_descr_file": ""
   },

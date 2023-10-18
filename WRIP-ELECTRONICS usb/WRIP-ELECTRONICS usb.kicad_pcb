@@ -136,7 +136,7 @@
       (net 8 "/vin") (pinfunction "VBUS") (pintype "passive") (thermal_bridge_angle 45) (tstamp 16683c4a-365f-438b-934a-7b4faef80be8))
     (pad "B12" smd rect (at -3.2 -7.4) (size 0.6 1.2) (layers "F.Cu" "F.Paste" "F.Mask")
       (net 2 "GND") (pinfunction "GND") (pintype "passive") (thermal_bridge_angle 45) (tstamp e8307e47-f366-4d84-93e3-d06d8c477694))
-    (model "D:/sfxer/design/keyboard/components/3d models/hro_type-c-31-m-12.step"
+    (model "D:/sfxer/design/keyboard/components/3d models/hro_type-c-31-m-12.step" hide
       (offset (xyz -4.5 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -287,7 +287,7 @@
       (net 8 "/vin") (tstamp 6b859a55-6dc7-4daa-91fa-f48c464b4da8))
   )
 
-  (gr_rect (start 89.9 62) (end 100.12 68.98)
+  (gr_rect (start 90.15 62.25) (end 99.87 68.73)
     (stroke (width 0.1) (type default)) (fill none) (layer "Edge.Cuts") (tstamp 020ad5f5-c98a-4eb7-b8cf-c1af7d34613a))
 
   (segment (start 94.250497 64.25) (end 93.75 63.749503) (width 0.25) (layer "F.Cu") (net 1) (tstamp 59466eb8-b2cb-45c3-bc66-8b6c743277b0))

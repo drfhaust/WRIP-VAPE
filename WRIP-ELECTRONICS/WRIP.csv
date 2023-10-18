@@ -1,0 +1,19 @@
+Source:,C:\Users\alex\Documents\GitHub\WRIP-VAPE\WRIP-ELECTRONICS\WRIP.kicad_sch,,,,,
+Date:,10/18/2023 21:28,,,,,
+Tool:,Eeschema (7.0.0),,,,,
+Generator:,C:\Program Files\KiCad\7.0\bin\scripting\plugins/bom_csv_grouped_by_value.py,,,,,
+Component Count:,22,,,,,
+,,,,,,
+Collated Components:,,,,,,
+,,,,,,
+Item,Qty,Reference(s),Value,LibPart,Footprint,
+1,2,"C1, C5",10uf,Device:C,Capacitor_SMD:C_0402_1005Metric,C15525
+2,2,"C2, C3",22uf,Device:C,Capacitor_SMD:C_0402_1005Metric,C415703
+3,2,"C4, C6",1uf,Device:C,Capacitor_SMD:C_0402_1005Metric,C380294
+4,4,"D1, D2, D3, D4",LED,Device:LED,LED_SMD:LED_0402_1005Metric,
+5,2,"J1, J3",Conn_01x02_Pin,Connector:Conn_01x02_Pin,Connector_PinHeader_2.00mm:PinHeader_1x02_P2.00mm_Vertical,
+6,5,"J4, J5, J6, J7, J8",Conn_01x01_Pin,Connector:Conn_01x01_Pin,Connector_Pin:Pin_D1.0mm_L10.0mm_LooseFit,
+7,1,L1,1uh,Device:L,1_sfxer footprints:INDUCTOR - SUNLORD - WPN252012H1R0MT,
+8,2,"R1, R2",100K,Device:R,Resistor_SMD:R_0402_1005Metric,C3015887
+9,1,SW1,SW_Push,Switch:SW_Push,Button_Switch_SMD:SW_SPST_TL3342,
+10,1,U1,~,rt9480:rt9480,Package_DFN_QFN:WQFN-24-1EP_4x4mm_P0.5mm_EP2.6x2.6mm_ThermalVias,
