@@ -1,0 +1,665 @@
+*************************************************************
+FileName = WRIP.GBR
+AutoAperture = True
+*************************************************************
+Generating : F.Paste
+      File : WRIP_Paste_Top_1.gbr
+
+    Adding Layer      : Layer 1
+
+    Adding Layer      : F.Paste
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D27
+    D28
+*************************************************************
+
+*************************************************************
+Generating : Bottom pi Coverlay (flex section)
+      File : WRIP_Coverlay_Bot_2.gbr
+
+    Adding Layer      : Bottom pi Coverlay (flex section)
+
+
+Used DCodes :
+*************************************************************
+
+*************************************************************
+Generating : Top pi Coverlay (flex section)
+      File : WRIP_Coverlay_Top_2.gbr
+
+    Adding Layer      : Top pi Coverlay (flex section)
+
+
+Used DCodes :
+*************************************************************
+
+*************************************************************
+Generating : Stiffener 1
+      File : WRIP_Other_10.gbr
+
+    Adding Layer      : Stiffener 1
+
+
+Used DCodes :
+*************************************************************
+
+*************************************************************
+Generating : Adhesive 4
+      File : WRIP_Other_9.gbr
+
+    Adding Layer      : Adhesive 4
+
+
+Used DCodes :
+*************************************************************
+
+*************************************************************
+Generating : Layer 2
+      File : WRIP_Copper_Signal_2.gbr
+
+    Adding Layer      : Layer 2
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D38
+    D48
+    D49
+    D50
+    D51
+*************************************************************
+
+*************************************************************
+Generating : Top Courtyard
+      File : WRIP_Top_Courtyard.gbr
+
+    Adding Layer      : Top Courtyard
+
+
+Used DCodes :
+    D12
+    D59
+*************************************************************
+
+*************************************************************
+Generating : Dielectric 2
+      File : WRIP_Other_8.gbr
+
+    Adding Layer      : Dielectric 2
+
+
+Used DCodes :
+*************************************************************
+
+*************************************************************
+Generating : B.Cu
+      File : WRIP_Copper_Signal_Bot.gbr
+
+    Adding Layer      : B.Cu
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D38
+    D45
+    D48
+    D49
+    D50
+    D51
+    D53
+    D54
+    D55
+*************************************************************
+
+*************************************************************
+Generating : F.SilkS
+      File : WRIP_Legend_Top.gbr
+
+    Adding Layer      : F.SilkS
+
+
+Used DCodes :
+    D10
+    D11
+    D12
+    D13
+    D14
+*************************************************************
+
+*************************************************************
+Generating : Top Assembly
+      File : WRIP_Top_Assembly.gbr
+
+    Adding Layer      : Top Assembly
+
+
+Used DCodes :
+    D11
+    D12
+*************************************************************
+
+*************************************************************
+Generating : B.CrtYd
+      File : WRIP_B.CrtYd.gbr
+
+    Adding Layer      : B.CrtYd
+
+
+Used DCodes :
+    D11
+*************************************************************
+
+*************************************************************
+Generating : Eco2.User
+      File : WRIP_Eco2.User.gbr
+
+    Adding Layer      : Eco2.User
+
+
+Used DCodes :
+    D11
+    D59
+*************************************************************
+
+*************************************************************
+Generating : Adhesive 6
+      File : WRIP_Other_6.gbr
+
+    Adding Layer      : Adhesive 6
+
+
+Used DCodes :
+*************************************************************
+
+*************************************************************
+Generating : Top Component Center
+      File : WRIP_Top_Component_Center.gbr
+
+    Adding Layer      : Top Component Center
+
+
+Used DCodes :
+    D11
+*************************************************************
+
+*************************************************************
+Generating : Top Designator
+      File : WRIP_Top_Designator.gbr
+
+    Adding Layer      : Top Designator
+
+
+Used DCodes :
+*************************************************************
+
+*************************************************************
+Generating : Bottom Assembly
+      File : WRIP_Bottom_Assembly.gbr
+
+    Adding Layer      : Bottom Assembly
+
+
+Used DCodes :
+*************************************************************
+
+*************************************************************
+Generating : Bottom Courtyard
+      File : WRIP_Bottom_Courtyard.gbr
+
+    Adding Layer      : Bottom Courtyard
+
+
+Used DCodes :
+*************************************************************
+
+*************************************************************
+Generating : Bottom 3D Body
+      File : WRIP_Bottom_3D_Body.gbr
+
+    Adding Layer      : Bottom 3D Body
+
+
+Used DCodes :
+*************************************************************
+
+*************************************************************
+Generating : B.Mask
+      File : WRIP_Soldermask_Bot_1.gbr
+
+    Adding Layer      : Layer 2
+
+    Adding Layer      : B.Mask
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D39
+*************************************************************
+
+*************************************************************
+Generating : Bottom Component Center
+      File : WRIP_Bottom_Component_Center.gbr
+
+    Adding Layer      : Bottom Component Center
+
+
+Used DCodes :
+*************************************************************
+
+*************************************************************
+Generating : F.CrtYd
+      File : WRIP_F.CrtYd.gbr
+
+    Adding Layer      : F.CrtYd
+
+
+Used DCodes :
+*************************************************************
+
+*************************************************************
+Generating : B.Fab
+      File : WRIP_B.Fab.gbr
+
+    Adding Layer      : B.Fab
+
+
+Used DCodes :
+*************************************************************
+
+*************************************************************
+Generating : Top 3D Body
+      File : WRIP_Top_3D_Body.gbr
+
+    Adding Layer      : Top 3D Body
+
+
+Used DCodes :
+    D12
+*************************************************************
+
+*************************************************************
+Generating : User.9
+      File : WRIP_User.9.gbr
+
+    Adding Layer      : User.9
+
+
+Used DCodes :
+    D58
+*************************************************************
+
+*************************************************************
+Generating : Bottom Designator
+      File : WRIP_Bottom_Designator.gbr
+
+    Adding Layer      : Bottom Designator
+
+
+Used DCodes :
+*************************************************************
+
+*************************************************************
+Generating : B.Paste
+      File : WRIP_Paste_Bot.gbr
+
+    Adding Layer      : B.Paste
+
+    Adding Layer      : B.Cu
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D54
+    D55
+*************************************************************
+
+*************************************************************
+Generating : Edge.Cuts
+      File : WRIP_Keep-out.gbr
+
+    Adding Layer      : Edge.Cuts
+
+
+Used DCodes :
+    D58
+*************************************************************
+
+*************************************************************
+Generating : F.Paste
+      File : WRIP_Paste_Top.gbr
+
+    Adding Layer      : F.Paste
+
+    Adding Layer      : F.Cu
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D15
+    D16
+    D17
+    D18
+    D19
+    D20
+    D21
+    D22
+    D23
+    D24
+    D25
+    D26
+*************************************************************
+
+*************************************************************
+Generating : B.Mask
+      File : WRIP_Soldermask_Bot.gbr
+
+    Adding Layer      : B.Mask
+
+    Adding Layer      : B.Cu
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D38
+    D39
+    D40
+    D41
+    D42
+    D56
+    D57
+*************************************************************
+
+*************************************************************
+Generating : F.Mask
+      File : WRIP_Soldermask_Top.gbr
+
+    Adding Layer      : F.Mask
+
+    Adding Layer      : F.Cu
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D16
+    D17
+    D18
+    D29
+    D30
+    D31
+    D32
+    D33
+    D34
+    D35
+    D36
+    D37
+    D38
+    D39
+    D40
+    D41
+    D42
+*************************************************************
+
+*************************************************************
+Generating : B.SilkS
+      File : WRIP_Legend_Bot.gbr
+
+    Adding Layer      : B.SilkS
+
+
+Used DCodes :
+    D14
+*************************************************************
+
+*************************************************************
+Generating : F.Fab
+      File : WRIP_F.Fab.gbr
+
+    Adding Layer      : F.Fab
+
+
+Used DCodes :
+*************************************************************
+
+*************************************************************
+Generating : Bottom Pad Master
+      File : WRIP_Pads_Bot.gbr
+
+    Adding Layer      : B.Cu
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D38
+    D54
+    D55
+*************************************************************
+
+*************************************************************
+Generating : F.Mask
+      File : WRIP_Soldermask_Top_1.gbr
+
+    Adding Layer      : Layer 1
+
+    Adding Layer      : F.Mask
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D39
+    D43
+    D44
+*************************************************************
+
+*************************************************************
+Generating : F.Cu
+      File : WRIP_Copper_Signal_Top.gbr
+
+    Adding Layer      : F.Cu
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D11
+    D12
+    D15
+    D16
+    D17
+    D18
+    D19
+    D20
+    D21
+    D22
+    D23
+    D24
+    D25
+    D26
+    D38
+    D45
+    D46
+    D47
+    D48
+    D49
+    D50
+    D51
+*************************************************************
+
+*************************************************************
+Generating : Layer 1
+      File : WRIP_Copper_Signal_1.gbr
+
+    Adding Layer      : Layer 1
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D11
+    D14
+    D27
+    D28
+    D38
+    D48
+    D49
+    D50
+    D51
+    D52
+    D53
+*************************************************************
+
+*************************************************************
+Generating : B.Paste
+      File : WRIP_Paste_Bot_1.gbr
+
+    Adding Layer      : Layer 2
+
+    Adding Layer      : B.Paste
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+*************************************************************
+Generating : Adhesive 2
+      File : WRIP_Other_7.gbr
+
+    Adding Layer      : Adhesive 2
+
+
+Used DCodes :
+*************************************************************
+
+*************************************************************
+Generating : Adhesive 3
+      File : WRIP_Other_1.gbr
+
+    Adding Layer      : Adhesive 3
+
+
+Used DCodes :
+*************************************************************
+
+*************************************************************
+Generating : Multi-Layer
+      File : WRIP_Other.gbr
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D38
+*************************************************************
+
+*************************************************************
+Generating : Top Pad Master
+      File : WRIP_Pads_Top.gbr
+
+    Adding Layer      : F.Cu
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D15
+    D16
+    D17
+    D18
+    D19
+    D20
+    D21
+    D22
+    D23
+    D24
+    D25
+    D26
+    D38
+*************************************************************
+
+*************************************************************
+Generating : polyamide
+      File : WRIP_Other_5.gbr
+
+    Adding Layer      : polyamide
+
+
+Used DCodes :
+*************************************************************
+
+*************************************************************
+Generating : Adhesive 1
+      File : WRIP_Other_3.gbr
+
+    Adding Layer      : Adhesive 1
+
+
+Used DCodes :
+*************************************************************
+
+*************************************************************
+Generating : Dielectric 1
+      File : WRIP_Other_2.gbr
+
+    Adding Layer      : Dielectric 1
+
+
+Used DCodes :
+*************************************************************
+
+*************************************************************
+Generating : Adhesive 5
+      File : WRIP_Other_4.gbr
+
+    Adding Layer      : Adhesive 5
+
+
+Used DCodes :
+*************************************************************
+
+*************************************************************
+Generating : Drill Drawing
+      File : WRIP_Drawing_1.gbr
+
+    Adding Drill Pair : F.Cu-B.Cu
+
+    Adding Layer      : Drill Drawing
+
+
+Used DCodes :
+    D60
+*************************************************************
+
+*************************************************************
+Generating : Drill Guide
+      File : WRIP_Drillmap_1.gbr
+
+    Adding Drill Pair : F.Cu-B.Cu
+
+    Adding Layer      : Drill Guide
+
+
+Used DCodes :
+    D60
+*************************************************************
+
+*************************************************************
+Generating : Profile
+      File : WRIP_Profile.gbr
+
+
+Used DCodes :
+    D61
+*************************************************************
+

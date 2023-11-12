@@ -1,0 +1,57 @@
+------------------------------------------------------------------------------------------
+Gerber File Extension Report For: WRIP.GBR   11/3/2023  8:28:08 AM
+------------------------------------------------------------------------------------------
+
+
+------------------------------------------------------------------------------------------
+Layer Extension     Layer Description                      
+------------------------------------------------------------------------------------------
+.gbr                F.SilkS                                 
+.gbr                F.Paste                                 
+.gbr                F.Paste                                 
+.gbr                F.Mask                                  
+.gbr                F.Mask                                  
+.gbr                F.Cu                                    
+.gbr                Layer 1                                 
+.gbr                Layer 2                                 
+.gbr                B.Cu                                    
+.gbr                B.Mask                                  
+.gbr                B.Mask                                  
+.gbr                B.Paste                                 
+.gbr                B.SilkS                                 
+.gbr                User.9                                  
+.gbr                Top 3D Body                             
+.gbr                Top Courtyard                           
+.gbr                Bottom Designator                       
+.gbr                Top Assembly                            
+.gbr                F.Fab                                   
+.gbr                B.Fab                                   
+.gbr                F.CrtYd                                 
+.gbr                B.CrtYd                                 
+.gbr                Eco2.User                               
+.gbr                Top Component Center                    
+.gbr                Top Designator                          
+.gbr                Bottom Assembly                         
+.gbr                Bottom Courtyard                        
+.gbr                Bottom 3D Body                          
+.gbr                Bottom Component Center                 
+.gbr                Top pi Coverlay (flex section)          
+.gbr                Bottom pi Coverlay (flex section)       
+.gbr                Edge.Cuts                               
+.gbr                Top Pad Master                          
+.gbr                Bottom Pad Master                       
+.gbr                Multi-Layer                             
+.gbr                Adhesive 3                              
+.gbr                Dielectric 1                            
+.gbr                Adhesive 1                              
+.gbr                Adhesive 5                              
+.gbr                polyamide                               
+.gbr                Adhesive 6                              
+.gbr                Adhesive 2                              
+.gbr                Dielectric 2                            
+.gbr                Adhesive 4                              
+.gbr                Stiffener 1                             
+.gbr                Drill Drawing                           
+.gbr                Drill Guide                             
+.gbr                Profile                                 
+------------------------------------------------------------------------------------------

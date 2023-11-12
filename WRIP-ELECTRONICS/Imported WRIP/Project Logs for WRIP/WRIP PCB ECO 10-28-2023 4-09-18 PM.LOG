@@ -1,0 +1,14 @@
+Removed Pin From Net: NetName=GND Pin=P1-1
+Removed Pin From Net: NetName=Net*1_2 Pin=P1-2
+Removed Member From Class: ClassName=Sheet2 Member=P1
+Change Component Designator: OldDesignator=R1 NewDesignator=R2
+Change Component Designator: OldDesignator=R2 NewDesignator=R3
+Change Component Designator: OldDesignator=R3 NewDesignator=R4
+Change Component Designator: OldDesignator=R4 NewDesignator=R5
+Change Component Designator: OldDesignator=R5 NewDesignator=R6
+Added Component: Designator=R1(RESC1005X40X25LL05T10)
+Add component (AddParameter): Name = "Manufacturer"; Value = "Yageo"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part Number"; Value = "RC0402FR-0725K5L"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=Net*1_2 Pin=R1-1
+Added Pin To Net: NetName=GND Pin=R1-2
+Added Member To Class: ClassName=Sheet2 Member=Component R6 Resistor

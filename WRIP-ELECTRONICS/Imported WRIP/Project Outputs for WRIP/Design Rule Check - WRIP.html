@@ -1,0 +1,446 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<style type="text/css">
+		h1, h2, h3, h4, h5, h6 {
+			font-family : segoe ui;
+			color : black;
+			background-color : #EDE7D9;
+			padding: 0.3em;
+		}
+
+		h1 {
+			font-size: 1.2em;
+		}		
+
+		h2 {
+			font-size: 1.2em;
+		}
+
+		body {
+			font-family : segoe ui;
+		}
+
+		td, th {
+			padding: 0.5em;
+			text-align : left;
+			width: 10em;
+		}
+		th {
+			background-color : #EEEEEE;
+
+		}
+		th.column1, td.column1 {
+			text-align: left;
+			width : auto;
+		}
+		table {
+			width : 100%;
+			font-size: 0.9em;
+		}
+
+		.DRC_summary_header {
+			padding-bottom : 0.1em;
+			border : 0px solid black;
+			width: 100%;
+			align: left;
+		}
+
+		.DRC_summary_header_col1,
+		.DRC_summary_header_col2, 
+		.DRC_summary_header_col3 {
+			color : black;
+			font-size:100%;
+			padding : 0em;
+			padding-top : 0.2em;
+			padding-bottom 0.2em;
+			border : 0px solid black;
+			vertical-align: top;
+			text-align: left;
+		}
+
+		.DRC_summary_header_col1 {
+			font-weight: bold;
+			width: 9em;
+		}
+
+		.DRC_summary_header_col2 {
+			width: 0.1em;
+		
+		}
+
+		.DRC_summary_header_col3 {
+			width : auto;
+		}
+
+		.header_holder {
+		    Width = 100%;
+		    border = 0px solid green;
+		    padding = 0;
+		}
+
+
+		.front_matter, .front_matter_column1, .front_matter_column2, .front_matter_column3
+		{
+			left : 0;
+			top : 0;
+			padding: 0em;
+			padding-top : 0.1em;
+			border : 0px solid black;
+			width : 100%;
+			vertical-align: top;
+			text-align: left;
+		}
+
+		.front_matter_column1 {
+			width : 8em;
+			font-weight: bold;
+		}
+
+		.front_matter_column2 {
+			width: 0.1em;
+		}
+
+		.front_matter_column3 {
+			width : auto;
+		}
+
+		.total_column1, .total_column {
+			font-weight : bold;
+		}
+		.total_column1 {
+			text-align : left;
+		}
+		.warning, .error {
+			color : red;
+			font-weight : bold;
+		}
+		tr.onmouseout_odd {
+			background-color : #white;
+		}
+		tr.onmouseout_even { 
+			background-color : #FAFAFA;
+		}
+		tr.onmouseover_odd, tr.onmouseover_even { 
+			background-color : #EEEEEE;
+		} 
+		a:link, a:visited, .q a:link,.q a:active,.q {
+			color: #21489e; 
+		}
+		a:link.callback, a:visited.callback { 
+			color: #21489e;
+		}
+		a:link.customize, a:visited.customize {
+			color: #C0C0C0;
+			position: absolute; 
+			right: 10px;
+		}	
+		p.contents_level1 {
+			font-weight : bold;
+			font-size : 110%;
+			margin : 0.5em;
+		}
+		p.contents_level2 {
+			position : relative;
+			left : 20px;
+			margin : 0.5em;
+		}
+	</style><script type="text/javascript">
+		function coordToMils(coord) {
+			var number = coord / 10000;
+			
+			if (number != number.toFixed(3))
+				number = number.toFixed(3);
+
+			return number + 'mil'
+		}
+
+		function coordToMM(coord) {
+			var number = 0.0254 * coord / 10000;
+			
+			if (number != number.toFixed(4))
+				number = number.toFixed(4);
+			
+			return number + 'mm'
+		}
+	
+		function convertCoord(coordNode, units) {
+			for (var i = 0; i < coordNode.childNodes.length; i++) {
+				coordNode.removeChild(coordNode.childNodes[i]);
+			}
+
+			var coord = coordNode.getAttribute('value');
+			if (coord != null) {
+				if (units == 'mm') {
+					textNode = document.createTextNode(coordToMM(coord));
+					coordNode.appendChild(textNode);
+				} else if (units == 'mil') {
+					textNode = document.createTextNode(coordToMils(coord));		
+					coordNode.appendChild(textNode);	
+				}
+			}
+		}
+	
+		function convertUnits(unitNode, units) {
+			for (var i = 0; i < unitNode.childNodes.length; i++) {
+				unitNode.removeChild(unitNode.childNodes[i]);		
+			}
+		
+			textNode = document.createTextNode(units); 
+			unitNode.appendChild(textNode);
+		}
+	
+		function changeUnits(radio_input, units) {
+			if (radio_input.checked) {
+			
+				var elements = document.getElementsByName('coordinate');
+				if (elements) {
+					for (var i = 0; i < elements.length; i++) {
+						convertCoord(elements[i], units);
+					}
+				}
+	
+				var elements = document.getElementsByName('units');
+				if (elements) {
+					for (var i = 0; i < elements.length; i++) {
+						convertUnits(elements[i], units);
+					}
+				}
+			}
+		}
+	</script><title>Design Rule Verification Report</title>
+</head>
+<body onload=""><img ALT="Altium" src="
+			file://C:\Users\Public\Documents\Altium\AD23\Templates\AD_logo.png
+		"><h1>Design Rule Verification Report</h1>
+<table class="header_holder">
+<td class="column1">
+<table class="front_matter">
+<tr class="front_matter">
+<td class="front_matter_column1">Date:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">11/12/2023</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Time:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">9:58:44 AM</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Elapsed Time:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">00:00:04</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Filename:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3"><a href="file:///C:\Users\alex\Documents\GitHub\WRIP-VAPE\WRIP-ELECTRONICS\Imported WRIP\WRIP.PcbDoc" class="file"><acronym title="C:\Users\alex\Documents\GitHub\WRIP-VAPE\WRIP-ELECTRONICS\Imported WRIP\WRIP.PcbDoc">C:\Users\alex\Documents\GitHub\WRIP-VAPE\WRIP-ELECTRONICS\Imported WRIP\WRIP.PcbDoc</acronym></a></td>
+</tr>
+</table>
+</td>
+<td class="column2">
+<table class="DRC_summary_header">
+<tr>
+<td class="DRC_summary_header_col1">Warnings:</td>
+<td class="DRC_summary_header_col2"></td>
+<td class="DRC_summary_header_col3">0</td></tr>
+<tr>
+<td class="DRC_summary_header_col1">Rule Violations:</td>
+<td class="DRC_summary_header_col2"></td>
+<td class="DRC_summary_header_col3" style="color : red">38</td></tr>
+</table>
+</td>
+</table><a name="ID4UPAOF1AR1YCBLX23Z3FDRRK5CL1TRLNLULB4ECTLTQ5SXMKFKQH"><h2>Summary</h2></a><table>
+<tr>
+<th class="column1">Warnings</th>
+<th class="column2">Count</th>
+</tr>
+<tr>
+<td style="font-weight : bold; text-align : right" class="column1">Total</td>
+<td style="font-weight : bold" class="column2">0</td>
+</tr>
+</table><br><table>
+<tr>
+<th class="column1">Rule Violations</th>
+<th class="column2">Count</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDOKHN4RLEJIB5BDY2Y2WG5URLNPQNVVDMALN2VKE15Z2FVTNKL5TB">Clearance Constraint (Gap=0.5mm) (InNamedPolygon('F.Cu-/vbat') OR InNamedPolygon('B.Cu-GND')),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDO0PQPHZMHN53BDJ5OSK45QGTNJ4ZFBLSE50QGUORPBS2JWG5NKLI">Clearance Constraint (Gap=0.08mm) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDNRF5JOG4NU3SNQG2OJFTJW44OLI4A4CT0IFYSYDESHVGCWTEPBZB">Short-Circuit Constraint (Allowed=No) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDBKRTEN5H12B4MO4JCAMW0AW03CH2UYZOQSDK5BFQRWIHP2OUON">Un-Routed Net Constraint ( (All) )</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#ID24G1MZWBCSEECSM3BNR4JHPXDGNO24W2WKFGO3MQANXD4IH5RPSF">Modified Polygon (Allow modified: No), (Allow shelved: No)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDYABHHKCVCS1XDTOL5DI4MSNOCNXDLY3DTBPTGSBTX2XONWQBAECJ">Width Constraint (Min=0.1mm) (Max=10mm) (Preferred=0.2mm) (All)</a></td>
+<td class="column2">38</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDM10X2FLOY0W0JDC4CPVKLAWG3HNOE0XCAP24JFJUS24BF42TVBTK">Power Plane Connect Rule(Relief Connect )(Expansion=0.508mm) (Conductor Width=0.254mm) (Air Gap=0.254mm) (Entries=4) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDQAQ2SQB5FC3DGFNADOCXH15OHJ1PUPGNPCYD0XDQRQSQNIUYMCCC">Hole Size Constraint (Min=0.025mm) (Max=2.54mm) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDGTSD0EIY2CJYKXINI2A1XZKEMOY3ZFWVVJIEF2BHT2KJBPFLAI5G">Hole To Hole Clearance (Gap=0.254mm) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDGDR40DZ03BYJF4JKOHXO52PS1OFKULDAMIXALQIZLTAIW1QXEBDG">Minimum Solder Mask Sliver (Gap=0mm) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDZTHWKDASDHBFIOP4IOJWP3K5GIXCUCBEF5KGSHP3TFBYR4VEEUTO">Silk To Solder Mask (Clearance=0mm) (IsPad),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDWKLDTCGJNMTJIOQO4T3JYXTF5NJ1LERGZIDVGYBHBKPDXD24XMZG">Silk to Silk (Clearance=0mm) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDDBVJQSBHCYXTP3GJ2PIZCPET3JIK4IFFR3QROTECP0APWHSQFV5B">Net Antennae (Tolerance=0mm) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#ID2HJGMAIZMWG2BIZZTZZGN5MH1N2JA5J04T25DQGLRJLMOTSY1Y1M">Height Constraint (Min=0mm) (Max=25.4mm) (Prefered=12.7mm) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr>
+<td style="font-weight : bold; text-align : right" class="column1">Total</td>
+<td style="font-weight : bold" class="column2">38</td>
+</tr>
+</table><br><a name="IDYABHHKCVCS1XDTOL5DI4MSNOCNXDLY3DTBPTGSBTX2XONWQBAECJ"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Width Constraint (Min=0.1mm) (Max=10mm) (Preferred=0.2mm) (All)</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\alex\Documents\GitHub\WRIP-VAPE\WRIP-ELECTRONICS\Imported WRIP\WRIP.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=10944.348mil|Location2.X=10959.256mil|Location1.Y=1262.083mil|Location2.Y=1278.458mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\alex\Documents\GitHub\WRIP-VAPE\WRIP-ELECTRONICS\Imported WRIP\WRIP.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=10944.348mil|Location2.X=10959.256mil|Location1.Y=1262.083mil|Location2.Y=1278.458mil|Absolute=True">Width Constraint: Track (-0.06mm,12.582mm)(-0.06mm,13.382mm) on B.Cu Actual Width = 0.3mm</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\alex\Documents\GitHub\WRIP-VAPE\WRIP-ELECTRONICS\Imported WRIP\WRIP.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=10986.358mil|Location2.X=11008.624mil|Location1.Y=1311.236mil|Location2.Y=1326.047mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\alex\Documents\GitHub\WRIP-VAPE\WRIP-ELECTRONICS\Imported WRIP\WRIP.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=10986.358mil|Location2.X=11008.624mil|Location1.Y=1311.236mil|Location2.Y=1326.047mil|Absolute=True">Width Constraint: Track (-0.109mm,14.231mm)(2.117mm,14.231mm) on B.Cu Actual Width = 0.3mm</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\alex\Documents\GitHub\WRIP-VAPE\WRIP-ELECTRONICS\Imported WRIP\WRIP.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=10924.663mil|Location2.X=10939.571mil|Location1.Y=1254.701mil|Location2.Y=1271.076mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\alex\Documents\GitHub\WRIP-VAPE\WRIP-ELECTRONICS\Imported WRIP\WRIP.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=10924.663mil|Location2.X=10939.571mil|Location1.Y=1254.701mil|Location2.Y=1271.076mil|Absolute=True">Width Constraint: Track (-0.56mm,12.582mm)(-0.56mm,13.007mm) on B.Cu Actual Width = 0.3mm</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\alex\Documents\GitHub\WRIP-VAPE\WRIP-ELECTRONICS\Imported WRIP\WRIP.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=10933.648mil|Location2.X=10953.789mil|Location1.Y=1320.124mil|Location2.Y=1334.935mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\alex\Documents\GitHub\WRIP-VAPE\WRIP-ELECTRONICS\Imported WRIP\WRIP.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=10933.648mil|Location2.X=10953.789mil|Location1.Y=1320.124mil|Location2.Y=1334.935mil|Absolute=True">Width Constraint: Track (-0.56mm,14.682mm)(-0.109mm,14.231mm) on B.Cu Actual Width = 0.3mm</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\alex\Documents\GitHub\WRIP-VAPE\WRIP-ELECTRONICS\Imported WRIP\WRIP.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=10924.663mil|Location2.X=10939.571mil|Location1.Y=1346.138mil|Location2.Y=1362.513mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\alex\Documents\GitHub\WRIP-VAPE\WRIP-ELECTRONICS\Imported WRIP\WRIP.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=10924.663mil|Location2.X=10939.571mil|Location1.Y=1346.138mil|Location2.Y=1362.513mil|Absolute=True">Width Constraint: Track (-0.56mm,14.682mm)(-0.56mm,15.552mm) on B.Cu Actual Width = 0.3mm</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\alex\Documents\GitHub\WRIP-VAPE\WRIP-ELECTRONICS\Imported WRIP\WRIP.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=10917.088mil|Location2.X=10939.354mil|Location1.Y=1263.067mil|Location2.Y=1277.878mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\alex\Documents\GitHub\WRIP-VAPE\WRIP-ELECTRONICS\Imported WRIP\WRIP.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=10917.088mil|Location2.X=10939.354mil|Location1.Y=1263.067mil|Location2.Y=1277.878mil|Absolute=True">Width Constraint: Track (-0.95mm,13.007mm)(-0.56mm,13.007mm) on B.Cu Actual Width = 0.3mm</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\alex\Documents\GitHub\WRIP-VAPE\WRIP-ELECTRONICS\Imported WRIP\WRIP.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=10905.972mil|Location2.X=10926.113mil|Location1.Y=1266.512mil|Location2.Y=1281.323mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\alex\Documents\GitHub\WRIP-VAPE\WRIP-ELECTRONICS\Imported WRIP\WRIP.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=10905.972mil|Location2.X=10926.113mil|Location1.Y=1266.512mil|Location2.Y=1281.323mil|Absolute=True">Width Constraint: Track (-1.125mm,13.182mm)(-0.95mm,13.007mm) on B.Cu Actual Width = 0.3mm</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\alex\Documents\GitHub\WRIP-VAPE\WRIP-ELECTRONICS\Imported WRIP\WRIP.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=10922.791mil|Location2.X=10942.932mil|Location1.Y=1299.484mil|Location2.Y=1314.295mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\alex\Documents\GitHub\WRIP-VAPE\WRIP-ELECTRONICS\Imported WRIP\WRIP.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=10922.791mil|Location2.X=10942.932mil|Location1.Y=1299.484mil|Location2.Y=1314.295mil|Absolute=True">Width Constraint: Track (-1.16mm,14.482mm)(-0.06mm,13.382mm) on B.Cu Actual Width = 0.3mm</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\alex\Documents\GitHub\WRIP-VAPE\WRIP-ELECTRONICS\Imported WRIP\WRIP.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=10901.041mil|Location2.X=10915.949mil|Location1.Y=1366.413mil|Location2.Y=1382.789mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\alex\Documents\GitHub\WRIP-VAPE\WRIP-ELECTRONICS\Imported WRIP\WRIP.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=10901.041mil|Location2.X=10915.949mil|Location1.Y=1366.413mil|Location2.Y=1382.789mil|Absolute=True">Width Constraint: Track (-1.16mm,14.482mm)(-1.16mm,16.782mm) on B.Cu Actual Width = 0.3mm</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\alex\Documents\GitHub\WRIP-VAPE\WRIP-ELECTRONICS\Imported WRIP\WRIP.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=10899.864mil|Location2.X=10922.13mil|Location1.Y=1269.957mil|Location2.Y=1284.768mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\alex\Documents\GitHub\WRIP-VAPE\WRIP-ELECTRONICS\Imported WRIP\WRIP.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=10899.864mil|Location2.X=10922.13mil|Location1.Y=1269.957mil|Location2.Y=1284.768mil|Absolute=True">Width Constraint: Track (-1.26mm,13.182mm)(-1.125mm,13.182mm) on B.Cu Actual Width = 0.3mm</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\alex\Documents\GitHub\WRIP-VAPE\WRIP-ELECTRONICS\Imported WRIP\WRIP.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=11003.403mil|Location2.X=11018.311mil|Location1.Y=1385.986mil|Location2.Y=1402.361mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\alex\Documents\GitHub\WRIP-VAPE\WRIP-ELECTRONICS\Imported WRIP\WRIP.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=11003.403mil|Location2.X=11018.311mil|Location1.Y=1385.986mil|Location2.Y=1402.361mil|Absolute=True">Width Constraint: Track (1.44mm,15.552mm)(1.44mm,16.706mm) on B.Cu Actual Width = 0.3mm</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\alex\Documents\GitHub\WRIP-VAPE\WRIP-ELECTRONICS\Imported WRIP\WRIP.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=11006.959mil|Location2.X=11026.997mil|Location1.Y=1412.167mil|Location2.Y=1426.978mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\alex\Documents\GitHub\WRIP-VAPE\WRIP-ELECTRONICS\Imported WRIP\WRIP.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=11006.959mil|Location2.X=11026.997mil|Location1.Y=1412.167mil|Location2.Y=1426.978mil|Absolute=True">Width Constraint: Track (1.44mm,16.706mm)(1.616mm,16.882mm) on B.Cu Actual Width = 0.3mm</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\alex\Documents\GitHub\WRIP-VAPE\WRIP-ELECTRONICS\Imported WRIP\WRIP.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=11024.676mil|Location2.X=11046.941mil|Location1.Y=1415.626mil|Location2.Y=1430.437mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\alex\Documents\GitHub\WRIP-VAPE\WRIP-ELECTRONICS\Imported WRIP\WRIP.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=11024.676mil|Location2.X=11046.941mil|Location1.Y=1415.626mil|Location2.Y=1430.437mil|Absolute=True">Width Constraint: Track (1.616mm,16.882mm)(2.34mm,16.882mm) on B.Cu Actual Width = 0.3mm</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\alex\Documents\GitHub\WRIP-VAPE\WRIP-ELECTRONICS\Imported WRIP\WRIP.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=10877.419mil|Location2.X=10892.327mil|Location1.Y=1400.567mil|Location2.Y=1416.943mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\alex\Documents\GitHub\WRIP-VAPE\WRIP-ELECTRONICS\Imported WRIP\WRIP.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=10877.419mil|Location2.X=10892.327mil|Location1.Y=1400.567mil|Location2.Y=1416.943mil|Absolute=True">Width Constraint: Track (-1.76mm,16.217mm)(-1.76mm,16.782mm) on B.Cu Actual Width = 0.3mm</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\alex\Documents\GitHub\WRIP-VAPE\WRIP-ELECTRONICS\Imported WRIP\WRIP.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=11023.088mil|Location2.X=11037.996mil|Location1.Y=1272.624mil|Location2.Y=1288.999mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\alex\Documents\GitHub\WRIP-VAPE\WRIP-ELECTRONICS\Imported WRIP\WRIP.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=11023.088mil|Location2.X=11037.996mil|Location1.Y=1272.624mil|Location2.Y=1288.999mil|Absolute=True">Width Constraint: Track (1.94mm,12.582mm)(1.94mm,13.918mm) on B.Cu Actual Width = 0.3mm</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\alex\Documents\GitHub\WRIP-VAPE\WRIP-ELECTRONICS\Imported WRIP\WRIP.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=11026.683mil|Location2.X=11046.721mil|Location1.Y=1302.411mil|Location2.Y=1317.222mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\alex\Documents\GitHub\WRIP-VAPE\WRIP-ELECTRONICS\Imported WRIP\WRIP.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=11026.683mil|Location2.X=11046.721mil|Location1.Y=1302.411mil|Location2.Y=1317.222mil|Absolute=True">Width Constraint: Track (1.94mm,13.918mm)(2.117mm,14.095mm) on B.Cu Actual Width = 0.3mm</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\alex\Documents\GitHub\WRIP-VAPE\WRIP-ELECTRONICS\Imported WRIP\WRIP.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=11023.088mil|Location2.X=11037.996mil|Location1.Y=1343.411mil|Location2.Y=1359.787mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\alex\Documents\GitHub\WRIP-VAPE\WRIP-ELECTRONICS\Imported WRIP\WRIP.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=11023.088mil|Location2.X=11037.996mil|Location1.Y=1343.411mil|Location2.Y=1359.787mil|Absolute=True">Width Constraint: Track (1.94mm,14.544mm)(1.94mm,15.552mm) on B.Cu Actual Width = 0.3mm</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\alex\Documents\GitHub\WRIP-VAPE\WRIP-ELECTRONICS\Imported WRIP\WRIP.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=11026.683mil|Location2.X=11046.824mil|Location1.Y=1320.061mil|Location2.Y=1334.871mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\alex\Documents\GitHub\WRIP-VAPE\WRIP-ELECTRONICS\Imported WRIP\WRIP.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=11026.683mil|Location2.X=11046.824mil|Location1.Y=1320.061mil|Location2.Y=1334.871mil|Absolute=True">Width Constraint: Track (1.94mm,14.544mm)(2.117mm,14.366mm) on B.Cu Actual Width = 0.3mm</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\alex\Documents\GitHub\WRIP-VAPE\WRIP-ELECTRONICS\Imported WRIP\WRIP.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=10865.608mil|Location2.X=10880.516mil|Location1.Y=1362.181mil|Location2.Y=1378.557mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\alex\Documents\GitHub\WRIP-VAPE\WRIP-ELECTRONICS\Imported WRIP\WRIP.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=10865.608mil|Location2.X=10880.516mil|Location1.Y=1362.181mil|Location2.Y=1378.557mil|Absolute=True">Width Constraint: Track (-2.06mm,15.497mm)(-2.06mm,15.552mm) on B.Cu Actual Width = 0.3mm</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\alex\Documents\GitHub\WRIP-VAPE\WRIP-ELECTRONICS\Imported WRIP\WRIP.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=11030.084mil|Location2.X=11044.992mil|Location1.Y=1308.572mil|Location2.Y=1324.948mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\alex\Documents\GitHub\WRIP-VAPE\WRIP-ELECTRONICS\Imported WRIP\WRIP.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=11030.084mil|Location2.X=11044.992mil|Location1.Y=1308.572mil|Location2.Y=1324.948mil|Absolute=True">Width Constraint: Track (2.117mm,14.095mm)(2.117mm,14.231mm) on B.Cu Actual Width = 0.3mm</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\alex\Documents\GitHub\WRIP-VAPE\WRIP-ELECTRONICS\Imported WRIP\WRIP.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=11030.084mil|Location2.X=11044.992mil|Location1.Y=1313.899mil|Location2.Y=1330.275mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\alex\Documents\GitHub\WRIP-VAPE\WRIP-ELECTRONICS\Imported WRIP\WRIP.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=11030.084mil|Location2.X=11044.992mil|Location1.Y=1313.899mil|Location2.Y=1330.275mil|Absolute=True">Width Constraint: Track (2.117mm,14.231mm)(2.117mm,14.366mm) on B.Cu Actual Width = 0.3mm</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\alex\Documents\GitHub\WRIP-VAPE\WRIP-ELECTRONICS\Imported WRIP\WRIP.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=10863.639mil|Location2.X=10878.547mil|Location1.Y=1259.819mil|Location2.Y=1276.194mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\alex\Documents\GitHub\WRIP-VAPE\WRIP-ELECTRONICS\Imported WRIP\WRIP.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=10863.639mil|Location2.X=10878.547mil|Location1.Y=1259.819mil|Location2.Y=1276.194mil|Absolute=True">Width Constraint: Track (-2.11mm,12.897mm)(-2.11mm,12.952mm) on B.Cu Actual Width = 0.3mm</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\alex\Documents\GitHub\WRIP-VAPE\WRIP-ELECTRONICS\Imported WRIP\WRIP.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=10863.639mil|Location2.X=10878.547mil|Location1.Y=1311mil|Location2.Y=1327.376mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\alex\Documents\GitHub\WRIP-VAPE\WRIP-ELECTRONICS\Imported WRIP\WRIP.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=10863.639mil|Location2.X=10878.547mil|Location1.Y=1311mil|Location2.Y=1327.376mil|Absolute=True">Width Constraint: Track (-2.11mm,12.952mm)(-2.11mm,15.497mm) on B.Cu Actual Width = 0.3mm</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\alex\Documents\GitHub\WRIP-VAPE\WRIP-ELECTRONICS\Imported WRIP\WRIP.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=10864.72mil|Location2.X=10886.986mil|Location1.Y=1361.099mil|Location2.Y=1375.909mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\alex\Documents\GitHub\WRIP-VAPE\WRIP-ELECTRONICS\Imported WRIP\WRIP.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=10864.72mil|Location2.X=10886.986mil|Location1.Y=1361.099mil|Location2.Y=1375.909mil|Absolute=True">Width Constraint: Track (-2.11mm,15.497mm)(-2.06mm,15.497mm) on B.Cu Actual Width = 0.3mm</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\alex\Documents\GitHub\WRIP-VAPE\WRIP-ELECTRONICS\Imported WRIP\WRIP.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=10863.639mil|Location2.X=10878.547mil|Location1.Y=1369.465mil|Location2.Y=1385.84mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\alex\Documents\GitHub\WRIP-VAPE\WRIP-ELECTRONICS\Imported WRIP\WRIP.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=10863.639mil|Location2.X=10878.547mil|Location1.Y=1369.465mil|Location2.Y=1385.84mil|Absolute=True">Width Constraint: Track (-2.11mm,15.552mm)(-2.11mm,15.867mm) on B.Cu Actual Width = 0.3mm</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\alex\Documents\GitHub\WRIP-VAPE\WRIP-ELECTRONICS\Imported WRIP\WRIP.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=10870.626mil|Location2.X=10890.664mil|Location1.Y=1382.555mil|Location2.Y=1397.366mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\alex\Documents\GitHub\WRIP-VAPE\WRIP-ELECTRONICS\Imported WRIP\WRIP.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=10870.626mil|Location2.X=10890.664mil|Location1.Y=1382.555mil|Location2.Y=1397.366mil|Absolute=True">Width Constraint: Track (-2.11mm,15.867mm)(-1.76mm,16.217mm) on B.Cu Actual Width = 0.3mm</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\alex\Documents\GitHub\WRIP-VAPE\WRIP-ELECTRONICS\Imported WRIP\WRIP.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=11064.046mil|Location2.X=11084.187mil|Location1.Y=1414.135mil|Location2.Y=1428.946mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\alex\Documents\GitHub\WRIP-VAPE\WRIP-ELECTRONICS\Imported WRIP\WRIP.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=11064.046mil|Location2.X=11084.187mil|Location1.Y=1414.135mil|Location2.Y=1428.946mil|Absolute=True">Width Constraint: Track (2.94mm,16.882mm)(3.016mm,16.806mm) on B.Cu Actual Width = 0.3mm</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\alex\Documents\GitHub\WRIP-VAPE\WRIP-ELECTRONICS\Imported WRIP\WRIP.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=11065.44mil|Location2.X=11080.348mil|Location1.Y=1404.672mil|Location2.Y=1421.047mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\alex\Documents\GitHub\WRIP-VAPE\WRIP-ELECTRONICS\Imported WRIP\WRIP.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=11065.44mil|Location2.X=11080.348mil|Location1.Y=1404.672mil|Location2.Y=1421.047mil|Absolute=True">Width Constraint: Track (3.016mm,16.402mm)(3.016mm,16.806mm) on B.Cu Actual Width = 0.3mm</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\alex\Documents\GitHub\WRIP-VAPE\WRIP-ELECTRONICS\Imported WRIP\WRIP.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=11073.888mil|Location2.X=11094.029mil|Location1.Y=1388.348mil|Location2.Y=1403.159mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\alex\Documents\GitHub\WRIP-VAPE\WRIP-ELECTRONICS\Imported WRIP\WRIP.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=11073.888mil|Location2.X=11094.029mil|Location1.Y=1388.348mil|Location2.Y=1403.159mil|Absolute=True">Width Constraint: Track (3.016mm,16.402mm)(3.44mm,15.977mm) on B.Cu Actual Width = 0.3mm</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\alex\Documents\GitHub\WRIP-VAPE\WRIP-ELECTRONICS\Imported WRIP\WRIP.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=10840.114mil|Location2.X=10862.379mil|Location1.Y=1361.099mil|Location2.Y=1375.909mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\alex\Documents\GitHub\WRIP-VAPE\WRIP-ELECTRONICS\Imported WRIP\WRIP.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=10840.114mil|Location2.X=10862.379mil|Location1.Y=1361.099mil|Location2.Y=1375.909mil|Absolute=True">Width Constraint: Track (-3.31mm,15.497mm)(-2.11mm,15.497mm) on B.Cu Actual Width = 0.3mm</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\alex\Documents\GitHub\WRIP-VAPE\WRIP-ELECTRONICS\Imported WRIP\WRIP.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=10839.13mil|Location2.X=10861.395mil|Location1.Y=1260.902mil|Location2.Y=1275.713mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\alex\Documents\GitHub\WRIP-VAPE\WRIP-ELECTRONICS\Imported WRIP\WRIP.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=10839.13mil|Location2.X=10861.395mil|Location1.Y=1260.902mil|Location2.Y=1275.713mil|Absolute=True">Width Constraint: Track (-3.36mm,12.952mm)(-2.11mm,12.952mm) on B.Cu Actual Width = 0.3mm</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\alex\Documents\GitHub\WRIP-VAPE\WRIP-ELECTRONICS\Imported WRIP\WRIP.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=11080.174mil|Location2.X=11095.082mil|Location1.Y=1259.819mil|Location2.Y=1276.194mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\alex\Documents\GitHub\WRIP-VAPE\WRIP-ELECTRONICS\Imported WRIP\WRIP.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=11080.174mil|Location2.X=11095.082mil|Location1.Y=1259.819mil|Location2.Y=1276.194mil|Absolute=True">Width Constraint: Track (3.39mm,12.897mm)(3.39mm,12.952mm) on B.Cu Actual Width = 0.3mm</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\alex\Documents\GitHub\WRIP-VAPE\WRIP-ELECTRONICS\Imported WRIP\WRIP.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=11080.174mil|Location2.X=11095.082mil|Location1.Y=1312.083mil|Location2.Y=1328.458mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\alex\Documents\GitHub\WRIP-VAPE\WRIP-ELECTRONICS\Imported WRIP\WRIP.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=11080.174mil|Location2.X=11095.082mil|Location1.Y=1312.083mil|Location2.Y=1328.458mil|Absolute=True">Width Constraint: Track (3.39mm,12.952mm)(3.39mm,15.552mm) on B.Cu Actual Width = 0.3mm</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\alex\Documents\GitHub\WRIP-VAPE\WRIP-ELECTRONICS\Imported WRIP\WRIP.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=11104.878mil|Location2.X=11127.143mil|Location1.Y=1260.902mil|Location2.Y=1275.713mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\alex\Documents\GitHub\WRIP-VAPE\WRIP-ELECTRONICS\Imported WRIP\WRIP.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=11104.878mil|Location2.X=11127.143mil|Location1.Y=1260.902mil|Location2.Y=1275.713mil|Absolute=True">Width Constraint: Track (3.39mm,12.952mm)(4.64mm,12.952mm) on B.Cu Actual Width = 0.3mm</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\alex\Documents\GitHub\WRIP-VAPE\WRIP-ELECTRONICS\Imported WRIP\WRIP.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=11082.143mil|Location2.X=11097.051mil|Location1.Y=1368.382mil|Location2.Y=1384.757mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\alex\Documents\GitHub\WRIP-VAPE\WRIP-ELECTRONICS\Imported WRIP\WRIP.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=11082.143mil|Location2.X=11097.051mil|Location1.Y=1368.382mil|Location2.Y=1384.757mil|Absolute=True">Width Constraint: Track (3.44mm,15.552mm)(3.44mm,15.812mm) on B.Cu Actual Width = 0.3mm</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\alex\Documents\GitHub\WRIP-VAPE\WRIP-ELECTRONICS\Imported WRIP\WRIP.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=11082.143mil|Location2.X=11097.051mil|Location1.Y=1376.748mil|Location2.Y=1393.123mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\alex\Documents\GitHub\WRIP-VAPE\WRIP-ELECTRONICS\Imported WRIP\WRIP.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=11082.143mil|Location2.X=11097.051mil|Location1.Y=1376.748mil|Location2.Y=1393.123mil|Absolute=True">Width Constraint: Track (3.44mm,15.812mm)(3.44mm,15.977mm) on B.Cu Actual Width = 0.3mm</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\alex\Documents\GitHub\WRIP-VAPE\WRIP-ELECTRONICS\Imported WRIP\WRIP.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=11105.862mil|Location2.X=11128.128mil|Location1.Y=1373.5mil|Location2.Y=1388.311mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\alex\Documents\GitHub\WRIP-VAPE\WRIP-ELECTRONICS\Imported WRIP\WRIP.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=11105.862mil|Location2.X=11128.128mil|Location1.Y=1373.5mil|Location2.Y=1388.311mil|Absolute=True">Width Constraint: Track (3.44mm,15.812mm)(4.64mm,15.812mm) on B.Cu Actual Width = 0.3mm</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\alex\Documents\GitHub\WRIP-VAPE\WRIP-ELECTRONICS\Imported WRIP\WRIP.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=10692.455mil|Location2.X=10745.18mil|Location1.Y=1533.37mil|Location2.Y=1575.74mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\alex\Documents\GitHub\WRIP-VAPE\WRIP-ELECTRONICS\Imported WRIP\WRIP.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=10692.455mil|Location2.X=10745.18mil|Location1.Y=1533.37mil|Location2.Y=1575.74mil|Absolute=True">Width Constraint: Track (-8.544mm,20.223mm)(-3.677mm,20.223mm) on B.Cu Actual Width = 1mm</acronym></a><br></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br></body>
+</html>

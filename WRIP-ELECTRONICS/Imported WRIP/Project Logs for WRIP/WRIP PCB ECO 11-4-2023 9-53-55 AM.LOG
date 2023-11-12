@@ -1,0 +1,27 @@
+Removed Pin From Net: NetName=GND Pin=*1-22
+Removed Pin From Net: NetName=GND Pin=*1-23
+Removed Pin From Net: NetName=GND Pin=*1-24
+Removed Pin From Net: NetName=GND Pin=C1-1
+Removed Pin From Net: NetName=GND Pin=C2-2
+Removed Pin From Net: NetName=GND Pin=C3-2
+Removed Pin From Net: NetName=GND Pin=J5-A4
+Removed Pin From Net: NetName=GND Pin=J5-A9
+Removed Pin From Net: NetName=GND Pin=J5-B4
+Removed Pin From Net: NetName=GND Pin=J5-B9
+Add Component: Footprint Not Found PAD_0.4X0.6
+Add Component: Footprint Not Found PAD_0.4X0.6
+Add Pin To Net: Unknown Pin: Pin J2-1
+Add Pin To Net: Unknown Pin: Pin J4-1
+Added Pin To Net: NetName=Net*1_22 Pin=*1-22
+Added Pin To Net: NetName=Net*1_22 Pin=*1-23
+Added Pin To Net: NetName=Net*1_22 Pin=*1-24
+Added Pin To Net: NetName=Net*1_22 Pin=C1-1
+Added Pin To Net: NetName=Net*1_22 Pin=C3-2
+Added Pin To Net: NetName=Net*1_22 Pin=J5-A4
+Added Pin To Net: NetName=Net*1_22 Pin=J5-A9
+Added Pin To Net: NetName=Net*1_22 Pin=J5-B4
+Added Pin To Net: NetName=Net*1_22 Pin=J5-B9
+Added Net: Name=Net*1_22
+Add Class Member: Failed to add class member : Component J2 PAD_AWG_22
+Add Class Member: Failed to add class member : Component J4 PAD_AWG_22
+Added Member To Class: ClassName=Sheet2 Member=Component J5 PAD_AWG_22

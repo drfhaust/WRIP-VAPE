@@ -1,0 +1,14 @@
+Added Component: Designator=J7(PAD_0.4X0.6)
+Add component (AddParameter): Name = ".Checked PCB"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = ".Checked SCH"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=J8(PAD_0.4X0.6)
+Add component (AddParameter): Name = ".Checked PCB"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = ".Checked SCH"; Value = ""; VariantName = "[No Variations]"
+Added Pin To Net: NetName=VCC Pin=J7-1
+Added Pin To Net: NetName=GND Pin=J8-1
+Added Member To Class: ClassName=Sheet2 Member=Component J7 PAD_AWG_22
+Added Member To Class: ClassName=Sheet2 Member=Component J8 PAD_AWG_22
+Added Member To Class: ClassName=Sheet2 Member=Component R1 10K NTC
+Added Member To Class: ClassName=Sheet2 Member=Component R2 Resistor
+Added Member To Class: ClassName=Sheet2 Member=Component R3 Resistor
+Added Member To Class: ClassName=Sheet2 Member=Component R5 Resistor

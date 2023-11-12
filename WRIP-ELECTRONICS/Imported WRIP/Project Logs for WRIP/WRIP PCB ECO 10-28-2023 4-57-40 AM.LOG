@@ -1,0 +1,121 @@
+Add Component: Footprint Not Found PAD_0.4X0.6
+Add Component: Footprint Not Found PAD_0.4X0.6
+Add Component: Footprint Not Found PAD_0.4X0.6
+Add Component: Footprint Not Found PAD_0.4X0.6
+Add Component: Footprint Not Found PAD_0.4X0.6
+Added Component: Designator=L2(BOUR-SRN3015-2_V)
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Manufacturer URL"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "http://www.bourns.com/"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "Datasheet"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "http://www.bourns.com/data/global/pdfs/SRN3015.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink3Description"; Value = "Package Specification"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink3URL"; Value = "http://www.bourns.com/data/global/pdfs/SRN3015.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "DatasheetVersion"; Value = "Aug-11"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "DCR Max"; Value = "0.048 Ohm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Inductance"; Value = "1 uH"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Inductance tolerance"; Value = "+/- 30%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Isat"; Value = "2.35 A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Bourns"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mounting Technology"; Value = "Surface Mount"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Operating Temperature"; Value = "-40 to 125 degC"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageDescription"; Value = "2-Pin SMD, Body 3 x 3 mm, Height 1.5 mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageReference"; Value = "SRN3015"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Packing"; Value = "Tape and Reel"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PartNumber"; Value = "SRN3015-1R0Y"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Rated current"; Value = "2.35 A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Resistance to Solder Heat"; Value = "+260 degC for 10 sec."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS"; Value = "TRUE"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SRF Min"; Value = "145 MHz"; VariantName = "[No Variations]"
+Added Component: Designator=L3(BOUR-SRN3015-2_V)
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Manufacturer URL"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "http://www.bourns.com/"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "Datasheet"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "http://www.bourns.com/data/global/pdfs/SRN3015.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink3Description"; Value = "Package Specification"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink3URL"; Value = "http://www.bourns.com/data/global/pdfs/SRN3015.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "DatasheetVersion"; Value = "Aug-11"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "DCR Max"; Value = "0.048 Ohm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Inductance"; Value = "1 uH"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Inductance tolerance"; Value = "+/- 30%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Isat"; Value = "2.35 A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Bourns"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mounting Technology"; Value = "Surface Mount"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Operating Temperature"; Value = "-40 to 125 degC"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageDescription"; Value = "2-Pin SMD, Body 3 x 3 mm, Height 1.5 mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageReference"; Value = "SRN3015"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Packing"; Value = "Tape and Reel"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PartNumber"; Value = "SRN3015-1R0Y"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Rated current"; Value = "2.35 A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Resistance to Solder Heat"; Value = "+260 degC for 10 sec."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS"; Value = "TRUE"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SRF Min"; Value = "145 MHz"; VariantName = "[No Variations]"
+Added Component: Designator=L4(BOUR-SRN3015-2_V)
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Manufacturer URL"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "http://www.bourns.com/"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "Datasheet"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "http://www.bourns.com/data/global/pdfs/SRN3015.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink3Description"; Value = "Package Specification"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink3URL"; Value = "http://www.bourns.com/data/global/pdfs/SRN3015.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "DatasheetVersion"; Value = "Aug-11"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "DCR Max"; Value = "0.048 Ohm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Inductance"; Value = "1 uH"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Inductance tolerance"; Value = "+/- 30%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Isat"; Value = "2.35 A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Bourns"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mounting Technology"; Value = "Surface Mount"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Operating Temperature"; Value = "-40 to 125 degC"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageDescription"; Value = "2-Pin SMD, Body 3 x 3 mm, Height 1.5 mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageReference"; Value = "SRN3015"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Packing"; Value = "Tape and Reel"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PartNumber"; Value = "SRN3015-1R0Y"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Rated current"; Value = "2.35 A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Resistance to Solder Heat"; Value = "+260 degC for 10 sec."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS"; Value = "TRUE"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SRF Min"; Value = "145 MHz"; VariantName = "[No Variations]"
+Add Pin To Net: Unknown Pin: Pin C1-1
+Add Pin To Net: Unknown Pin: Pin C1-2
+Add Pin To Net: Unknown Pin: Pin C2-1
+Add Pin To Net: Unknown Pin: Pin C2-2
+Add Pin To Net: Unknown Pin: Pin C3-1
+Add Pin To Net: Unknown Pin: Pin C3-2
+Add Pin To Net: Unknown Pin: Pin C4-1
+Add Pin To Net: Unknown Pin: Pin C4-2
+Add Pin To Net: Unknown Pin: Pin C5-1
+Add Pin To Net: Unknown Pin: Pin C5-2
+Add Pin To Net: Unknown Pin: Pin C6-1
+Add Pin To Net: Unknown Pin: Pin C6-2
+Add Pin To Net: Unknown Pin: Pin J2-1
+Add Pin To Net: Unknown Pin: Pin J3-1
+Add Pin To Net: Unknown Pin: Pin J4-1
+Add Pin To Net: Unknown Pin: Pin J5-1
+Add Pin To Net: Unknown Pin: Pin J6-1
+Add Pin To Net: Unknown Pin: Pin R1-1
+Add Pin To Net: Unknown Pin: Pin R1-2
+Add Pin To Net: Unknown Pin: Pin R2-1
+Add Pin To Net: Unknown Pin: Pin R2-2
+Add Pin To Net: Unknown Pin: Pin R3-1
+Add Pin To Net: Unknown Pin: Pin R3-2
+Add Pin To Net: Unknown Pin: Pin R4-1
+Add Pin To Net: Unknown Pin: Pin R4-2
+Add Pin To Net: Unknown Pin: Pin R5-1
+Add Pin To Net: Unknown Pin: Pin R5-2
+Add Class Member: Failed to add class member : Component C1 Capacitor
+Add Class Member: Failed to add class member : Component C2 Capacitor
+Add Class Member: Failed to add class member : Component C3 Capacitor
+Add Class Member: Failed to add class member : Component C4 Capacitor
+Add Class Member: Failed to add class member : Component C5 Capacitor
+Add Class Member: Failed to add class member : Component C6 Capacitor
+Add Class Member: Failed to add class member : Component J2 PAD_AWG_22
+Add Class Member: Failed to add class member : Component J3 PAD_AWG_22
+Add Class Member: Failed to add class member : Component J4 PAD_AWG_22
+Add Class Member: Failed to add class member : Component J5 PAD_AWG_22
+Add Class Member: Failed to add class member : Component J6 PAD_AWG_22
+Added Member To Class: ClassName=Sheet2 Member=Component L2 SRN3015-1R0Y
+Added Member To Class: ClassName=Sheet2 Member=Component L3 SRN3015-1R0Y
+Added Member To Class: ClassName=Sheet2 Member=Component L4 SRN3015-1R0Y
+Added Member To Class: ClassName=Sheet2 Member=Component LED4 QBLP595-IB
+Add Class Member: Failed to add class member : Component R1 Resistor
+Add Class Member: Failed to add class member : Component R2 Resistor
+Add Class Member: Failed to add class member : Component R3 Resistor
+Add Class Member: Failed to add class member : Component R4 Resistor
+Add Class Member: Failed to add class member : Component R5 Resistor

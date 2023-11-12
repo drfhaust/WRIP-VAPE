@@ -1,0 +1,49 @@
+Removed Pin From Net: NetName=GND Pin=J1-1
+Removed Pin From Net: NetName=GND Pin=J1-2
+Removed Pin From Net: NetName=GND Pin=J1-3
+Removed Pin From Net: NetName=GND Pin=J1-4
+Removed Pin From Net: NetName=GND Pin=J1-A12
+Removed Pin From Net: NetName=GND Pin=J1-B12
+Removed Member From Class: ClassName=Sheet2 Member=J1
+Added Component: Designator=J?(GCT_USB4145-03-0070-C_REVA2)
+Add component (AddParameter): Name = "Availability"; Value = "In Stock"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Check_prices"; Value = "https://www.snapeda.com/parts/USB4145-03-0070-C/Global+Connector+Technology/view-part/?ref=eda"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Component Type"; Value = "Standard"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Design Item ID"; Value = "USB4145-03-0070-C_REVA2"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "Global Connector Technology"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "USB4145-03-0070-C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pin Count"; Value = "20"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Price"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Purchase-URL"; Value = "https://pricing.snapeda.com/search/part/USB4145-03-0070-C/?ref=eda"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/USB4145-03-0070-C/Global+Connector+Technology/view-part/?ref=snap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Source"; Value = "USB4145-03-0070-C_REVA2.SchLib"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Pin To Net: NetName=GND Pin=*1-22
+Added Pin To Net: NetName=GND Pin=*1-23
+Added Pin To Net: NetName=GND Pin=*1-24
+Added Pin To Net: NetName=GND Pin=C1-1
+Added Pin To Net: NetName=GND Pin=C3-2
+Add Pin To Net: Unknown Pin: Pin J2-1
+Add Pin To Net: Unknown Pin: Pin J4-1
+Added Pin To Net: NetName=GND Pin=J?-A1
+Added Pin To Net: NetName=GND Pin=J?-A4
+Added Pin To Net: NetName=GND Pin=J?-A9
+Added Pin To Net: NetName=GND Pin=J?-A12
+Added Pin To Net: NetName=GND Pin=J?-B1
+Added Pin To Net: NetName=GND Pin=J?-B4
+Added Pin To Net: NetName=GND Pin=J?-B9
+Added Pin To Net: NetName=GND Pin=J?-B12
+Added Pin To Net: NetName=GND Pin=J?-S1
+Added Pin To Net: NetName=GND Pin=J?-S2
+Added Pin To Net: NetName=GND Pin=J?-S3
+Added Pin To Net: NetName=GND Pin=J?-S4
+Added Pin To Net: NetName=NetJ?_A5 Pin=J?-A5
+Added Pin To Net: NetName=NetJ?_A5 Pin=R2-1
+Added Net: Name=NetJ?_A5
+Added Pin To Net: NetName=NetJ?_B5 Pin=J?-B5
+Added Pin To Net: NetName=NetJ?_B5 Pin=R3-1
+Added Net: Name=NetJ?_B5
+Add Class Member: Failed to add class member : Component J2 PAD_AWG_22
+Add Class Member: Failed to add class member : Component J4 PAD_AWG_22
+Added Member To Class: ClassName=Sheet2 Member=Component J? USB4145-03-0070-C_REVA2

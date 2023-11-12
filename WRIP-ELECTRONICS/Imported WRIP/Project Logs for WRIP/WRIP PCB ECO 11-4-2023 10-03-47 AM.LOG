@@ -1,0 +1,10 @@
+Change Component Designator: OldDesignator=J5 NewDesignator=J10
+Add Component: Footprint Not Found PAD_0.4X0.6
+Add Component: Footprint Not Found PAD_0.4X0.6
+Add Pin To Net: Unknown Pin: Pin J2-1
+Add Pin To Net: Unknown Pin: Pin J4-1
+Change Net Name : Old Net Name=NetJ5_A5 New Net Name=NetJ10_A5
+Change Net Name : Old Net Name=NetJ5_B5 New Net Name=NetJ10_B5
+Add Class Member: Failed to add class member : Component J2 PAD_AWG_22
+Add Class Member: Failed to add class member : Component J4 PAD_AWG_22
+Added Member To Class: ClassName=Sheet2 Member=Component J10 USB4145-03-0070-C_REVA2

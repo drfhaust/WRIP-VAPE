@@ -1,0 +1,89 @@
+Protel Design System Design Rule Check
+PCB File : C:\Users\alex\Documents\GitHub\WRIP-VAPE\WRIP-ELECTRONICS\Imported WRIP\WRIP.PcbDoc
+Date     : 11/12/2023
+Time     : 9:58:44 AM
+
+Processing Rule : Clearance Constraint (Gap=0.5mm) (InNamedPolygon('F.Cu-/vbat') OR InNamedPolygon('B.Cu-GND')),(All)
+Rule Violations :0
+
+Processing Rule : Clearance Constraint (Gap=0.08mm) (All),(All)
+Rule Violations :0
+
+Processing Rule : Short-Circuit Constraint (Allowed=No) (All),(All)
+Rule Violations :0
+
+Processing Rule : Un-Routed Net Constraint ( (All) )
+Rule Violations :0
+
+Processing Rule : Modified Polygon (Allow modified: No), (Allow shelved: No)
+Rule Violations :0
+
+Processing Rule : Width Constraint (Min=0.1mm) (Max=10mm) (Preferred=0.2mm) (All)
+   Violation between Width Constraint: Track (-0.06mm,12.582mm)(-0.06mm,13.382mm) on B.Cu Actual Width = 0.3mm
+   Violation between Width Constraint: Track (-0.109mm,14.231mm)(2.117mm,14.231mm) on B.Cu Actual Width = 0.3mm
+   Violation between Width Constraint: Track (-0.56mm,12.582mm)(-0.56mm,13.007mm) on B.Cu Actual Width = 0.3mm
+   Violation between Width Constraint: Track (-0.56mm,14.682mm)(-0.109mm,14.231mm) on B.Cu Actual Width = 0.3mm
+   Violation between Width Constraint: Track (-0.56mm,14.682mm)(-0.56mm,15.552mm) on B.Cu Actual Width = 0.3mm
+   Violation between Width Constraint: Track (-0.95mm,13.007mm)(-0.56mm,13.007mm) on B.Cu Actual Width = 0.3mm
+   Violation between Width Constraint: Track (-1.125mm,13.182mm)(-0.95mm,13.007mm) on B.Cu Actual Width = 0.3mm
+   Violation between Width Constraint: Track (-1.16mm,14.482mm)(-0.06mm,13.382mm) on B.Cu Actual Width = 0.3mm
+   Violation between Width Constraint: Track (-1.16mm,14.482mm)(-1.16mm,16.782mm) on B.Cu Actual Width = 0.3mm
+   Violation between Width Constraint: Track (-1.26mm,13.182mm)(-1.125mm,13.182mm) on B.Cu Actual Width = 0.3mm
+   Violation between Width Constraint: Track (1.44mm,15.552mm)(1.44mm,16.706mm) on B.Cu Actual Width = 0.3mm
+   Violation between Width Constraint: Track (1.44mm,16.706mm)(1.616mm,16.882mm) on B.Cu Actual Width = 0.3mm
+   Violation between Width Constraint: Track (1.616mm,16.882mm)(2.34mm,16.882mm) on B.Cu Actual Width = 0.3mm
+   Violation between Width Constraint: Track (-1.76mm,16.217mm)(-1.76mm,16.782mm) on B.Cu Actual Width = 0.3mm
+   Violation between Width Constraint: Track (1.94mm,12.582mm)(1.94mm,13.918mm) on B.Cu Actual Width = 0.3mm
+   Violation between Width Constraint: Track (1.94mm,13.918mm)(2.117mm,14.095mm) on B.Cu Actual Width = 0.3mm
+   Violation between Width Constraint: Track (1.94mm,14.544mm)(1.94mm,15.552mm) on B.Cu Actual Width = 0.3mm
+   Violation between Width Constraint: Track (1.94mm,14.544mm)(2.117mm,14.366mm) on B.Cu Actual Width = 0.3mm
+   Violation between Width Constraint: Track (-2.06mm,15.497mm)(-2.06mm,15.552mm) on B.Cu Actual Width = 0.3mm
+   Violation between Width Constraint: Track (2.117mm,14.095mm)(2.117mm,14.231mm) on B.Cu Actual Width = 0.3mm
+   Violation between Width Constraint: Track (2.117mm,14.231mm)(2.117mm,14.366mm) on B.Cu Actual Width = 0.3mm
+   Violation between Width Constraint: Track (-2.11mm,12.897mm)(-2.11mm,12.952mm) on B.Cu Actual Width = 0.3mm
+   Violation between Width Constraint: Track (-2.11mm,12.952mm)(-2.11mm,15.497mm) on B.Cu Actual Width = 0.3mm
+   Violation between Width Constraint: Track (-2.11mm,15.497mm)(-2.06mm,15.497mm) on B.Cu Actual Width = 0.3mm
+   Violation between Width Constraint: Track (-2.11mm,15.552mm)(-2.11mm,15.867mm) on B.Cu Actual Width = 0.3mm
+   Violation between Width Constraint: Track (-2.11mm,15.867mm)(-1.76mm,16.217mm) on B.Cu Actual Width = 0.3mm
+   Violation between Width Constraint: Track (2.94mm,16.882mm)(3.016mm,16.806mm) on B.Cu Actual Width = 0.3mm
+   Violation between Width Constraint: Track (3.016mm,16.402mm)(3.016mm,16.806mm) on B.Cu Actual Width = 0.3mm
+   Violation between Width Constraint: Track (3.016mm,16.402mm)(3.44mm,15.977mm) on B.Cu Actual Width = 0.3mm
+   Violation between Width Constraint: Track (-3.31mm,15.497mm)(-2.11mm,15.497mm) on B.Cu Actual Width = 0.3mm
+   Violation between Width Constraint: Track (-3.36mm,12.952mm)(-2.11mm,12.952mm) on B.Cu Actual Width = 0.3mm
+   Violation between Width Constraint: Track (3.39mm,12.897mm)(3.39mm,12.952mm) on B.Cu Actual Width = 0.3mm
+   Violation between Width Constraint: Track (3.39mm,12.952mm)(3.39mm,15.552mm) on B.Cu Actual Width = 0.3mm
+   Violation between Width Constraint: Track (3.39mm,12.952mm)(4.64mm,12.952mm) on B.Cu Actual Width = 0.3mm
+   Violation between Width Constraint: Track (3.44mm,15.552mm)(3.44mm,15.812mm) on B.Cu Actual Width = 0.3mm
+   Violation between Width Constraint: Track (3.44mm,15.812mm)(3.44mm,15.977mm) on B.Cu Actual Width = 0.3mm
+   Violation between Width Constraint: Track (3.44mm,15.812mm)(4.64mm,15.812mm) on B.Cu Actual Width = 0.3mm
+   Violation between Width Constraint: Track (-8.544mm,20.223mm)(-3.677mm,20.223mm) on B.Cu Actual Width = 1mm
+Rule Violations :38
+
+Processing Rule : Power Plane Connect Rule(Relief Connect )(Expansion=0.508mm) (Conductor Width=0.254mm) (Air Gap=0.254mm) (Entries=4) (All)
+Rule Violations :0
+
+Processing Rule : Hole Size Constraint (Min=0.025mm) (Max=2.54mm) (All)
+Rule Violations :0
+
+Processing Rule : Hole To Hole Clearance (Gap=0.254mm) (All),(All)
+Rule Violations :0
+
+Processing Rule : Minimum Solder Mask Sliver (Gap=0mm) (All),(All)
+Rule Violations :0
+
+Processing Rule : Silk To Solder Mask (Clearance=0mm) (IsPad),(All)
+Rule Violations :0
+
+Processing Rule : Silk to Silk (Clearance=0mm) (All),(All)
+Rule Violations :0
+
+Processing Rule : Net Antennae (Tolerance=0mm) (All)
+Rule Violations :0
+
+Processing Rule : Height Constraint (Min=0mm) (Max=25.4mm) (Prefered=12.7mm) (All)
+Rule Violations :0
+
+
+Violations Detected : 38
+Waived Violations : 0
+Time Elapsed        : 00:00:04

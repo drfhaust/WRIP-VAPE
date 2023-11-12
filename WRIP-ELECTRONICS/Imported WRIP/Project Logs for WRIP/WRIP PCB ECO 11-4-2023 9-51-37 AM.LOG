@@ -1,0 +1,12 @@
+Removed Member From Class: ClassName=Sheet2 Member=J?
+Change Component Designator: OldDesignator=J? NewDesignator=J5
+Add Component: Footprint Not Found PAD_0.4X0.6
+Add Component: Footprint Not Found PAD_0.4X0.6
+Add Pin To Net: Unknown Pin: Pin J2-1
+Add Pin To Net: Unknown Pin: Pin J4-1
+Change Net Name : Old Net Name=NetJ?_A5 New Net Name=NetJ5_A5
+Change Net Name : Old Net Name=NetJ?_B5 New Net Name=NetJ5_B5
+Added Member To Class: ClassName=Sheet2 Member=Component *1 rt9480
+Add Class Member: Failed to add class member : Component J2 PAD_AWG_22
+Add Class Member: Failed to add class member : Component J4 PAD_AWG_22
+Added Member To Class: ClassName=Sheet2 Member=Component J5 PAD_AWG_22
