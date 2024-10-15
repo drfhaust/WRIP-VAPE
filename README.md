@@ -3,7 +3,7 @@ WRIST MOUNTED VAPE
 
 # WRIP Electronics Project
 
-This repository contains the design files for the WRIP electronics project, a wrist-mounted battery-powered vape developed by kodar embedded technologies limited.
+This repository contains the design files for the WRIP electronics project, a wrist-mounted battery-powered vape 
 
 ## Overview
 
